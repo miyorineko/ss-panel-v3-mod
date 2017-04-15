@@ -271,6 +271,8 @@ $System_Config['mu_suffix']='baidu.com';
 #多用户混淆参数表达式，%5m代表取用户特征 md5 的前五位，%id 代表用户id,%suffix 代表上面这个后缀。
 $System_Config['mu_regex']='%5m%id.%suffix';
 
+#自定义连接密码限制
+$System_Config['sspwd_pattern']='/[^A-Za-z0-9\-_\.]/';
 
 #图灵机器人
 $System_Config['enable_tuling']='false';
