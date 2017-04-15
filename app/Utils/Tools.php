@@ -162,7 +162,7 @@ class Tools
 
     public static function is_validate($str)
     {
-        $pattern = "/[^A-Za-z0-9\-_\.]/";
+        $pattern = Config::get('sspwd_pattern');
         if (preg_match($pattern, $str)) {
             return false;
         }
